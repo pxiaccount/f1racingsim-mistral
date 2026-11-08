@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 Racing Sim</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div id="hud">
+    <div id="hud-left">
+      <div class="panel">
+        <div class="label">LAP</div>
+        <div class="value"><span id="lap-num">1</span>/<span id="lap-total">3</span></div>
+      </div>
+      <div class="panel">
+        <div class="label">POSITION</div>
+        <div class="value"><span id="position">1</span>/<span id="car-count">2</span></div>
+      </div>
+    </div>
+    <div id="hud-right">
+      <div class="panel">
+        <div class="label">TIME</div>
+        <div class="value mono" id="lap-time">0:00.000</div>
+      </div>
+      <div class="panel">
+        <div class="label">LAST LAP</div>
+        <div class="value mono" id="last-lap">--:--.---</div>
+      </div>
+      <div class="panel">
+        <div class="label">BEST LAP</div>
+        <div class="value mono" id="best-lap">--:--.---</div>
+      </div>
+    </div>
+    <div id="hud-bottom">
+      <div id="speed"><span id="speed-num">0</span><span class="unit"> KM/H</span></div>
+      <div id="gear">GEAR <span id="gear-num">1</span></div>
+    </div>
+    <div id="wrong-way">WRONG WAY</div>
+  </div>
+
+  <div id="overlay">
+    <div id="overlay-title">F1 RACING SIM</div>
+    <div id="overlay-sub">Arrows / WASD to drive &middot; R to restart</div>
+    <div id="overlay-content"></div>
+    <button id="restart-btn">RACE AGAIN</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
