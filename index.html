@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>F1 Racing Sim</title>
+  <title>F1 Racing Sim — 3D</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <canvas id="game"></canvas>
+  <canvas id="minimap"></canvas>
 
   <div id="hud">
     <div id="hud-left">
@@ -42,12 +43,12 @@
   </div>
 
   <div id="overlay">
-    <div id="overlay-title">F1 RACING SIM</div>
+    <div id="overlay-title">F1 RACING <span>SIM</span></div>
     <div id="overlay-sub">Arrows / WASD to drive &middot; R to restart</div>
     <div id="overlay-content"></div>
     <button id="restart-btn">RACE AGAIN</button>
   </div>
 
-  <script src="game.js"></script>
+  <script type="module" src="game.js"></script>
 </body>
 </html>

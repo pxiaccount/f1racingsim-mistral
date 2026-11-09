@@ -63,6 +63,15 @@ html, body {
 #gear { font-size: 12px; letter-spacing: 2px; color: #9aa3ad; margin-top: 2px; }
 #gear-num { color: #ffd25e; font-weight: 700; font-size: 14px; }
 
+#minimap {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  width: 170px;
+  height: 128px;
+  pointer-events: none;
+}
+
 #wrong-way {
   position: absolute;
   top: 20%;
